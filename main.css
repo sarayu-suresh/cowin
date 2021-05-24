@@ -1,0 +1,242 @@
+/* --------------DEFAULTS----------------- */
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* ---------------NAV BAR---------------- */
+
+.navbar-light .navbar-toggler {
+    color: rgb(42, 13, 97);
+    border: 1px solid rgb(42, 13, 97);
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: rgb(16, 16, 110);
+    font-weight: 500;
+}
+
+a.middle {
+    position: relative;
+}
+
+a.middle:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(42, 13, 97);
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+}
+
+a.middle:hover:before {
+    visibility: visible;
+    transform: scaleX(1);
+    color: rgb(16, 16, 110);
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: rgb(16, 16, 110);
+}
+
+
+/* ---------------section1--------------- */
+
+.section1 {
+    background-color: rgb(20, 11, 80);
+    ;
+}
+
+.vimg {
+    padding: 40px;
+}
+
+.vaccineImg {
+    width: 100%;
+    margin: auto;
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, .15), 10px 12px 7px 0 rgba(0, 0, 0, .14);
+}
+
+.quote {
+    margin: auto;
+    padding: 20px;
+}
+
+div.quote h1 {
+    color: #fff;
+    font-weight: bold;
+    margin: auto;
+    padding: 10px;
+}
+
+div.quote h2 {
+    color: rgb(248, 206, 17);
+    font-weight: bold;
+    margin: auto;
+    padding: 10px;
+}
+
+div.quote h6 {
+    color: rgb(253, 253, 252);
+    font-weight: bold;
+    margin: auto;
+    padding: 10px;
+}
+
+.registerbuttons {
+    margin: auto;
+    padding: 20px;
+}
+
+.registerbuttonstyle {
+    background-color: rgb(245, 182, 8);
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, .15), 10px 12px 7px 0 rgba(0, 0, 0, .14);
+    color: rgb(7, 7, 7);
+    font-weight: 500;
+    border-radius: 10px;
+    margin: auto;
+}
+
+div.registerbuttons a:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(45, 13, 121);
+    border: 3px solid rgb(20, 11, 80);
+}
+
+
+/* ---------------section2------------------------ */
+
+.section2 {
+    background-color: rgb(226, 222, 222);
+    padding: 40px;
+}
+
+.procedure {
+    margin: auto;
+    text-align: center;
+}
+
+div.procedure h2 {
+    font-weight: bold;
+    margin: auto;
+    padding: 30px;
+}
+
+div.procedure h4 {
+    font-weight: bold;
+    margin: auto;
+    padding: 10px;
+}
+
+.procedureitems {
+    margin: auto;
+    padding: 10px;
+    display: inline;
+}
+
+div.box {
+    background-color: #fdbc00;
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, .15), 10px 12px 7px 0 rgba(0, 0, 0, .14);
+    border-radius: 3px;
+    text-align: center;
+    align-items: flex-start;
+    justify-content: space-between;
+    /* margin: 20px; */
+    padding: 20px 20px 20px 20px;
+}
+
+div.highlight :hover {
+    background-color: rgb(20, 11, 80);
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, .15), 10px 12px 7px 0 rgba(0, 0, 0, .14);
+    color: rgb(252, 252, 252);
+}
+
+.card-img-top {
+    width: 50%;
+}
+
+div.box h6 {
+    padding: 20px;
+}
+
+.procedurebuttons {
+    margin: auto;
+    padding: 40px;
+}
+
+.procedurebuttonstyle {
+    background-color: none;
+    color: rgb(20, 11, 80);
+    border: 2px solid rgb(20, 11, 80);
+    font-weight: 500;
+}
+
+div.procedurebuttons a:hover {
+    background-color: rgb(45, 13, 121);
+    color: rgb(255, 254, 254);
+}
+
+
+/* ----------------section3--------------------------- */
+
+.section3 {
+    padding: 40px;
+    margin: auto;
+    text-align: center;
+    background-color: rgb(20, 11, 80);
+}
+
+div.vaccineCentre h3 {
+    font-weight: bold;
+    color: #fff;
+}
+
+.searchbuttons {
+    margin: auto;
+    padding: 40px;
+}
+
+.searchbuttonstyle {
+    background-color: rgb(20, 11, 80);
+    color: rgb(252, 252, 253);
+    font-weight: 500;
+    border: 2px solid rgb(253, 252, 253);
+}
+
+div.searchbuttons a:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(45, 13, 121);
+    border: 3px solid rgb(20, 11, 80);
+}
+
+
+/* ---------------CUSTOM RESPONSIVE-------------- */
+
+@media screen and (max-width:680px) {
+    .vaccineImg {
+        width: 90%;
+        padding: 10px;
+        margin: auto;
+    }
+    .procedurebuttons {
+        margin: auto;
+        padding: 0px;
+        padding-top: 30px;
+    }
+    .procedurebuttonstyle {
+        margin-top: 10px;
+    }
+    .searchbuttonstyle {
+        margin-top: 20px;
+    }
+    .searchbuttons {
+        margin: auto;
+        padding: 0px;
+        padding-top: 30px;
+    }
+}
