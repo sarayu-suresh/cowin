@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <title>CoWin</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="index.html"><img class="d-inline-block align-top" width="160" height="50" src="./img/covid19logo.jpg"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ml-auto">
+                <a class="nav-item nav-link middle" href="index.html">Home</a>
+                <a class="nav-item nav-link middle" href="#">Dashboard</a>
+                <a class="nav-item nav-link middle" href="#">Department Login</a>
+                <a class="nav-item nav-link middle" href="#">Vaccinator</a>
+                <a class="nav-item nav-link middle" href="#">Verify Certificate</a>
+            </div>
+        </div>
+    </nav>
+    <div class="dsection1">
+        <div class="row">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-3 case" data-aos="fade-right" data-aos-duration="1000" data-aos-easing="ease-in-quad">
+                <div class="row vimg">
+                    <h2>Current Active Cases</h2>
+                    <div class="cases">
+                        <p class="counter-count">2727011</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 today" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-quad">
+                <div class="row vimg">
+                    <h2>Today's Cases</h2>
+                    <div class="cases">
+                        <p class="counter-count">243777</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3 case" data-aos="fade-left" data-aos-duration="1000" data-aos-easing="ease-in-quad">
+                <div class="row vimg">
+                    <h2>Recovered Cases</h2>
+                    <div class="cases">
+                        <p class="counter-count">23728011</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+    </div>
+    <div class="dsection2">
+        <div class="row">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-3 vcount" data-aos="fade-right" data-aos-duration="1000" data-aos-easing="ease-in-quad">
+                <div class="vboxscroll">
+                    <p>VACCINATION IN STATES/UT</p>
+                    <hr>
+                    <div class="row">
+                        <div class="=col-1"></div>
+                        <div class="col-7 states">
+                            <p>Andaman and Nicobar Islands</p>
+                        </div>
+                        <div class="col-3 number">
+                            <p>443</p>
+                        </div>
+                        <div class="=col-1"></div>
+                    </div>
+                    <div class="row">
+                        <div class="=col-1"></div>
+                        <div class="col-7 states">
+                            <p>Andhra Pradesh</p>
+                        </div>
+                        <div class="col-3 number">
+                            <p> 97,397</p>
+                        </div>
+                        <div class="=col-1"></div>
+                    </div>
+                    <div class="row">
+                        <div class="=col-1"></div>
+                        <div class="col-7 states">
+                            <p>Arunachal Pradesh</p>
+                        </div>
+                        <div class="col-3 number">
+                            <p>2,837</p>
+                        </div>
+                        <div class="=col-1"></div>
+                    </div>
+                    <div class="row">
+                        <div class="=col-1"></div>
+                        <div class="col-7 states">
+                            <p>Assam</p>
+                        </div>
+                        <div class="col-3 number">
+                            <p>70,854</p>
+                        </div>
+                        <div class="=col-1"></div>
+                    </div>
+                    <div class="row">
+                        <div class="=col-1"></div>
+                        <div class="col-7 states">
+                            <p>Bihar</p>
+                        </div>
+                        <div class="col-3 number">
+                            <p>1,76,216</p>
+                        </div>
+                        <div class="=col-1"></div>
+                    </div>
+                    <div class="row">
+                        <div class="=col-1"></div>
+                        <div class="col-7 states">
+                            <p>Chandigarh</p>
+                        </div>
+                        <div class="col-3 number">
+                            <p>5,001</p>
+                        </div>
+                        <div class="=col-1"></div>
+                    </div>
+                    <div class="row">
+                        <div class="=col-1"></div>
+                        <div class="col-7 states">
+                            <p>Chattisgarh</p>
+                        </div>
+                        <div class="col-3 number">
+                            <p>6,079</p>
+                        </div>
+                        <div class="=col-1"></div>
+                    </div>
+                    <div class="row">
+                        <div class="=col-1"></div>
+                        <div class="col-7 states">
+                            <p>Daman and Diu</p>
+                        </div>
+                        <div class="col-3 number">
+                            <p>3,145</p>
+                        </div>
+                        <div class="=col-1"></div>
+                    </div>
+                    <div class="row">
+                        <div class="=col-1"></div>
+                        <div class="col-7 states">
+                            <p>Delhi</p>
+                        </div>
+                        <div class="col-3 number">
+                            <p>53,786</p>
+                        </div>
+                        <div class="=col-1"></div>
+                    </div>
+                    <div class="row">
+                        <div class="=col-1"></div>
+                        <div class="col-7 states">
+                            <p>Goa</p>
+                        </div>
+                        <div class="col-3 number">
+                            <p>5,700</p>
+                        </div>
+                        <div class="=col-1"></div>
+                    </div>
+                    <div class="row">
+                        <div class="=col-1"></div>
+                        <div class="col-7 states">
+                            <p>Gujarat</p>
+                        </div>
+                        <div class="col-3 number">
+                            <p>1,75,345</p>
+                        </div>
+                        <div class="=col-1"></div>
+                    </div>
+                    <div class="row">
+                        <div class="=col-1"></div>
+                        <div class="col-7 states">
+                            <p>Haryana</p>
+                        </div>
+                        <div class="col-3 number">
+                            <p>88,876</p>
+                        </div>
+                        <div class="=col-1"></div>
+                    </div>
+                    <div class="row">
+                        <div class="=col-1"></div>
+                        <div class="col-7 states">
+                            <p>Himachal Pradesh</p>
+                        </div>
+                        <div class="col-3 number">
+                            <p>21,556</p>
+                        </div>
+                        <div class="=col-1"></div>
+                    </div>
+                    <div class="row">
+                        <div class="=col-1"></div>
+                        <div class="col-7 states">
+                            <p>Jammu and Kashmir</p>
+                        </div>
+                        <div class="col-3 number">
+                            <p>29,765</p>
+                        </div>
+                        <div class="=col-1"></div>
+                    </div>
+                    <div class="row">
+                        <div class="=col-1"></div>
+                        <div class="col-7 states">
+                            <p>Jharkhand</p>
+                        </div>
+                        <div class="col-3 number">
+                            <p>47,502</p>
+                        </div>
+                        <div class="=col-1"></div>
+                    </div>
+                    <div class="row">
+                        <div class="=col-1"></div>
+                        <div class="col-7 states">
+                            <p>Karnataka</p>
+                        </div>
+                        <div class="col-3 number">
+                            <p>1,42,643</p>
+                        </div>
+                        <div class="=col-1"></div>
+                    </div>
+                    <div class="row">
+                        <div class="=col-1"></div>
+                        <div class="col-7 states">
+                            <p>Kerala</p>
+                        </div>
+                        <div class="col-3 number">
+                            <p>52,876</p>
+                        </div>
+                        <div class="=col-1"></div>
+                    </div>
+                    <div class="row">
+                        <div class="=col-1"></div>
+                        <div class="col-7 states">
+                            <p>Ladakh</p>
+                        </div>
+                        <div class="col-3 number">
+                            <p>1,987</p>
+                        </div>
+                        <div class="=col-1"></div>
+                    </div>
+                    <div class="row">
+                        <div class="=col-1"></div>
+                        <div class="col-7 states">
+                            <p>Lakshadweep</p>
+                        </div>
+                        <div class="col-3 number">
+                            <p>69</p>
+                        </div>
+                        <div class="=col-1"></div>
+                    </div>
+                    <div class="row">
+                        <div class="=col-1"></div>
+                        <div class="col-7 states">
+                            <p>Madhya Pradesh</p>
+                        </div>
+                        <div class="col-3 number">
+                            <p>2,87,543</p>
+                        </div>
+                        <div class="=col-1"></div>
+                    </div>
+                    <div class="row">
+                        <div class="=col-1"></div>
+                        <div class="col-7 states">
+                            <p>Maharshtra</p>
+                        </div>
+                        <div class="col-3 number">
+                            <p>2,42,675</p>
+                        </div>
+                        <div class="=col-1"></div>
+                    </div>
+                    <div class="row">
+                        <div class="=col-1"></div>
+                        <div class="col-7 states">
+                            <p>Manipur</p>
+                        </div>
+                        <div class="col-3 number">
+                            <p>6,814</p>
+                        </div>
+                        <div class="=col-1"></div>
+                    </div>
+                    <div class="row">
+                        <div class="=col-1"></div>
+                        <div class="col-7 states">
+                            <p>Meghalaya</p>
+                        </div>
+                        <div class="col-3 number">
+                            <p>4,814</p>
+                        </div>
+                        <div class="=col-1"></div>
+                    </div>
+                    <div class="row">
+                        <div class="=col-1"></div>
+                        <div class="col-7 states">
+                            <p>Mizoram</p>
+                        </div>
+                        <div class="col-3 number">
+                            <p>1,814</p>
+                        </div>
+                        <div class="=col-1"></div>
+                    </div>
+                    <div class="row">
+                        <div class="=col-1"></div>
+                        <div class="col-7 states">
+                            <p>Nagaland</p>
+                        </div>
+                        <div class="col-3 number">
+                            <p>76,814</p>
+                        </div>
+                        <div class="=col-1"></div>
+                    </div>
+                    <div class="row">
+                        <div class="=col-1"></div>
+                        <div class="col-7 states">
+                            <p>Odisha</p>
+                        </div>
+                        <div class="col-3 number">
+                            <p>67,814</p>
+                        </div>
+                        <div class="=col-1"></div>
+                    </div>
+                    <div class="row">
+                        <div class="=col-1"></div>
+                        <div class="col-7 states">
+                            <p>Puducherry</p>
+                        </div>
+                        <div class="col-3 number">
+                            <p>7,814</p>
+                        </div>
+                        <div class="=col-1"></div>
+                    </div>
+                    <div class="row">
+                        <div class="=col-1"></div>
+                        <div class="col-7 states">
+                            <p>Punjab</p>
+                        </div>
+                        <div class="col-3 number">
+                            <p>66,814</p>
+                        </div>
+                        <div class="=col-1"></div>
+                    </div>
+                    <div class="row">
+                        <div class="=col-1"></div>
+                        <div class="col-7 states">
+                            <p>Rajasthan</p>
+                        </div>
+                        <div class="col-3 number">
+                            <p>1,76,814</p>
+                        </div>
+                        <div class="=col-1"></div>
+                    </div>
+                    <div class="row">
+                        <div class="=col-1"></div>
+                        <div class="col-7 states">
+                            <p>Sikkim</p>
+                        </div>
+                        <div class="col-3 number">
+                            <p>56,814</p>
+                        </div>
+                        <div class="=col-1"></div>
+                    </div>
+                    <div class="row">
+                        <div class="=col-1"></div>
+                        <div class="col-7 states">
+                            <p>Tamil Nadu</p>
+                        </div>
+                        <div class="col-3 number">
+                            <p>66,814</p>
+                        </div>
+                        <div class="=col-1"></div>
+                    </div>
+                    <div class="row">
+                        <div class="=col-1"></div>
+                        <div class="col-7 states">
+                            <p>Telangana</p>
+                        </div>
+                        <div class="col-3 number">
+                            <p>2,814</p>
+                        </div>
+                        <div class="=col-1"></div>
+                    </div>
+                    <div class="row">
+                        <div class="=col-1"></div>
+                        <div class="col-7 states">
+                            <p>Tripura</p>
+                        </div>
+                        <div class="col-3 number">
+                            <p>5,814</p>
+                        </div>
+                        <div class="=col-1"></div>
+                    </div>
+                    <div class="row">
+                        <div class="=col-1"></div>
+                        <div class="col-7 states">
+                            <p>Uttar Pradesh</p>
+                        </div>
+                        <div class="col-3 number">
+                            <p>2,87,814</p>
+                        </div>
+                        <div class="=col-1"></div>
+                    </div>
+                    <div class="row">
+                        <div class="=col-1"></div>
+                        <div class="col-7 states">
+                            <p>Uttarakhand</p>
+                        </div>
+                        <div class="col-3 number">
+                            <p>26,814</p>
+                        </div>
+                        <div class="=col-1"></div>
+                    </div>
+                    <div class="row">
+                        <div class="=col-1"></div>
+                        <div class="col-7 states">
+                            <p>West Bengal</p>
+                        </div>
+                        <div class="col-3 number">
+                            <p>1,76,814</p>
+                        </div>
+                        <div class="=col-1"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3 vcount" data-aos="fade-right" data-aos-duration="1000" data-aos-easing="ease-in-quad">
+                <div class="vbox">
+                    <div id="piechart1"></div>
+                </div>
+            </div>
+            <div class="col-sm-3 vcount" data-aos="fade-left" data-aos-duration="1000" data-aos-easing="ease-in-quad">
+                <div class="vbox">
+                    <img class="card-img-top" src="./img/arrow1.svg">
+                    <h6>Register using your Mobile no. or Aadhaar no. or any other Identity docs.</h6>
+                </div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <!-- JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script>
+        $('.counter-count').each(function() {
+            $(this).prop('Counter', 0).animate({
+                Counter: $(this).text()
+            }, {
+                duration: 4000,
+                easing: 'swing',
+                step: function(now) {
+                    $(this).text(Math.ceil(now));
+                }
+            });
+        });
+    </script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+    <script type="text/javascript">
+        // Load google charts
+        google.charts.load('current', {
+            'packages': ['corechart']
+        });
+        google.charts.setOnLoadCallback(drawChart);
+
+        // Draw the chart and set the chart values
+        function drawChart() {
+            var data = google.visualization.arrayToDataTable([
+                ['People', 'Total count'],
+                ['M', 80807909],
+                ['F', 71470493],
+                ['O', 22908]
+            ]);
+
+            // Optional; add a title and set the width and height of the chart
+            var options = {
+                'title': 'VACCINATION CATEGORY'
+            };
+
+            // Display the chart inside the <div> element with id="piechart"
+            var chart = new google.visualization.PieChart(document.getElementById('piechart1'));
+            chart.draw(data, options);
+        }
+    </script>
+</body>
+
+</html>
