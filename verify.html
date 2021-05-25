@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="icon" href="./img/add.png" type="image/x-icon">
+    <link rel="stylesheet" href="main.css">
+    <title>CoWin-Verify</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="index.html"><img class="d-inline-block align-top" width="160" height="50" src="./img/covid19logo.jpg"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ml-auto">
+                <a class="nav-item nav-link middle" href="index.html">Home</a>
+                <a class="nav-item nav-link middle" href="dashboard.html">Dashboard</a>
+                <a class="nav-item nav-link middle" href="departmentlogin.html">Department Login</a>
+                <a class="nav-item nav-link middle" href="vaccinator.html">Vaccinator</a>
+                <a class="nav-item nav-link middle" href="verify.html">Verify Certificate</a>
+            </div>
+        </div>
+    </nav>
+    <div class="vsection1" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-quad">
+        <div class="col-1"></div>
+        <div class="col-sm-10 verification">
+            <h2><b>VERIFY YOUR CERTIFICATE</b></h2>
+            <div class="row medal">
+                <img class="img-fluid medal" src="./img/medal.png"><br>
+            </div>
+            <div class="row">
+                <br><br><br><br>
+                <a class="btn verifybuttonstyle" href="#" role="button">Scan QR code </a>
+            </div>
+            <div class="row vcontent">
+                <br>
+                <p>Once the Covid-19 vaccination is completed, a certificate is issued to the citizens as a proof of vaccination. The vaccination certificate has a secure QR code to protect it against falsification. The genuineness of the certificate can
+                    be authenticated from this portal.</p>
+                <p>
+                    <b>Steps for verification :</b>
+                    <ol>
+                        <li>Click on “Scan QR code” above</li>
+                        <li>A notification will prompt to activate your device’s camera</li>
+                        <li>Point the camera to the QR code on the certificate issued and scan</li>
+                        <li>
+                            On successful verification, the following will be displayed
+                            <ul>
+                                <li>Message “Certificate Successfully Verified”</li>
+                                <li>Name</li>
+                                <li>Age</li>
+                                <li>Gender</li>
+                                <li>Beneficiary Reference ID</li>
+                                <li>Date of Dose</li>
+                                <li>Certificate Issued: Provisional/Final</li>
+                                <li>Vaccination at</li>
+                            </ul>
+                        </li>
+                        <li>If the certificate is not genuine, “Certificate Invalid” will be displayed</li>
+                    </ol>
+                </p>
+                <p>Private Sector Apps can now incorporate the "Certificate verification" service to verify COVID-19 certificates generated from Co-WIN.</p>
+                <p>The following steps need to be performed to integrate with Co-WIN and verify the COVID-19 certificate.</p>
+                <ul>
+                    <li>Go to reference code<a href="https://github.com/egovernments/DIVOC/tree/india/verification" target="_blank"> here</a></li>
+                    <li>Get code snippet for reference and implement</li>
+                    <li>Consume COWIN verification service into your application</li>
+                    <li>Replace the public key used in code snippet with Public key available<a href="https://verify.cowin.gov.in/did:india" target="_blank"> here</a></li>
+                </ul>
+                <p><b>NOTE:</b> Co-WIN uses an open-source component called "DIVOC" for the certificate issuance & verification service.</p>
+            </div>
+        </div>
+        <div class="col-1"></div>
+    </div>
+    <!-- JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

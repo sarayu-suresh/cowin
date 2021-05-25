@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="icon" href="./img/add.png" type="image/x-icon">
+    <link rel="stylesheet" href="main.css">
+    <title>CoWin-Vaccinator-Login</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="index.html"><img class="d-inline-block align-top" width="160" height="50" src="./img/covid19logo.jpg"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ml-auto">
+                <a class="nav-item nav-link middle" href="index.html">Home</a>
+                <a class="nav-item nav-link middle" href="dashboard.html">Dashboard</a>
+                <a class="nav-item nav-link middle" href="departmentlogin.html">Department Login</a>
+                <a class="nav-item nav-link middle" href="vaccinator.html">Vaccinator</a>
+                <a class="nav-item nav-link middle" href="verify.html">Verify Certificate</a>
+            </div>
+        </div>
+    </nav>
+    <div class="lsection1">
+        <div class="container login-container">
+            <div class="row" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-quad">
+                <div class="col"></div>
+                <div class="col-md-4 col-sm-8">
+                    <div class="card login-card">
+                        <div class="card-body"><br>
+                            <img class="img-fluid login-img" src="./img/covid19logo.jpg">
+                            <h6 class="welcome">Welcome </h6>
+                            <h6 class="welcomep">Vaccinator & Verifier!</h6><br>
+                            <form class="login-form">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="emailInput" placeholder="Enter mobile number">
+                                </div>
+                                <div class="form-group login-text">
+                                    <input type="password" class="form-control" id="passwordInput" placeholder="Password">
+                                </div>
+                                <button type="button" class="btn login-button btn-sm">Log In</button>
+                            </form>
+                            <br>
+                            <a class="frgt-pswd" href="#">Forgot Password?</a>
+                            <br><br>
+                            <div>
+                                <p class="line"><span>OR</span></p>
+                            </div>
+                            <br>
+                            <form class="login-form">
+                                <button type="button" class="btn login-button btn-sm">Log In Using OTP</button>
+                            </form>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+                <div class="col"></div>
+            </div>
+        </div>
+    </div>
+    <!-- JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

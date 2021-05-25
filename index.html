@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="icon" href="./img/add.png" type="image/x-icon">
     <link rel="stylesheet" href="main.css">
     <title>CoWin</title>
 </head>
@@ -22,9 +23,9 @@
             <div class="navbar-nav ml-auto">
                 <a class="nav-item nav-link middle" href="index.html">Home</a>
                 <a class="nav-item nav-link middle" href="dashboard.html">Dashboard</a>
-                <a class="nav-item nav-link middle" href="#">Department Login</a>
-                <a class="nav-item nav-link middle" href="#">Vaccinator</a>
-                <a class="nav-item nav-link middle" href="#">Verify Certificate</a>
+                <a class="nav-item nav-link middle" href="departmentlogin.html">Department Login</a>
+                <a class="nav-item nav-link middle" href="vaccinator.html">Vaccinator</a>
+                <a class="nav-item nav-link middle" href="verify.html">Verify Certificate</a>
             </div>
         </div>
     </nav>
@@ -47,7 +48,7 @@
                     <h6>#LARGEST VACCINE DRIVE</h6>
                 </div>
                 <div class="row registerbuttons">
-                    <a class="btn registerbuttonstyle" href="https://prod-cdn.preprod.co-vin.in/assets/pdf/User_Guide_Citizen%20registration_18+.pdf" target="_blank" role="button">Register or Sign In </a>
+                    <a class="btn registerbuttonstyle" href="register.html" role="button">Register or Sign In </a>
                 </div>
             </div>
             <div class="col-sm-3" data-aos="fade-left" data-aos-duration="1000" data-aos-easing="ease-in-quad">
@@ -63,10 +64,10 @@
         <div class="col-sm-10 procedure">
             <h2>HOW IT WORKS?</h2>
             <div class="row">
-                <div class="col-sm-6 procedureitems" data-aos="fade-up" data-aos-duration="2000" data-aos-easing="ease-in-quad">
+                <div class="col-sm-6 procedureitems" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-quad">
                     <h4>REGISTER YOURSELF</h4>
                 </div>
-                <div class="col-sm-6 highlight" data-aos="fade-up" data-aos-duration="2000" data-aos-easing="ease-in-quad">
+                <div class="col-sm-6 highlight" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-quad">
                     <div class="box">
                         <img class="card-img-top" src="./img/arrow1.svg">
                         <h6>Register using your Mobile no. or Aadhaar no. or any other Identity docs.</h6>
@@ -74,21 +75,21 @@
                 </div>
             </div>
             <div class="row flex-column-reverse flex-md-row">
-                <div class="col-sm-6 highlight" data-aos="fade-up" data-aos-duration="2000" data-aos-easing="ease-in-quad">
+                <div class="col-sm-6 highlight" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-quad">
                     <div class="box">
                         <img class="card-img-top" src="./img/arrow2.svg">
                         <h6>Select your nearby Vaccine Center for vaccination</h6>
                     </div>
                 </div>
-                <div class="col-sm-6 procedureitems" data-aos="fade-up" data-aos-duration="2000" data-aos-easing="ease-in-quad">
+                <div class="col-sm-6 procedureitems" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-quad">
                     <h4>CHOOSE VACCINE LOCATION</h4>
                 </div>
             </div>
             <div class="row" data-aos="fade-up">
-                <div class="col-sm-6 procedureitems" data-aos="fade-up" data-aos-duration="2000" data-aos-easing="ease-in-quad">
+                <div class="col-sm-6 procedureitems" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-quad">
                     <h4>CONFIRM YOUR SLOT</h4>
                 </div>
-                <div class="col-sm-6 highlight" data-aos="fade-up" data-aos-duration="2000" data-aos-easing="ease-in-quad">
+                <div class="col-sm-6 highlight" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-quad">
                     <div class="box">
                         <img class="card-img-top" src="./img/arrow3.svg">
                         <h6>Book your slot to Get Vaccine</h6>
@@ -142,7 +143,7 @@
                                             <input type="number" class="form-control" id="inputmail">
                                         </div>
                                         <button class="searchbm" onclick='check()'>Search</button>
-                                        <p class="searchm" id="demo"></p>
+                                        <h6 class="searchm" id="demo"></h6>
                                     </form>
                                 </div>
                             </div>
@@ -177,7 +178,7 @@
                                             <input type="text" class="form-control" id="inputmail">
                                         </div>
                                         <button class="searchbm" onclick='check2()'>Search</button>
-                                        <p class="searchm" id="demo2"></p>
+                                        <h6 class="searchm" id="demo2"></h6>
                                     </form>
                                 </div>
                             </div>
