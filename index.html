@@ -111,14 +111,83 @@
                 <h3>Check your nearest vaccination centre</h3>
                 <div class="row">
                     <div class="col-sm-12 searchbuttons">
-                        <a class="btn searchbuttonstyle" style='margin-right:16px; margin-left:16px' href="https://prod-cdn.preprod.co-vin.in/assets/pdf/User_Guide_Citizen%20registration_18+.pdf" target="_blank" role="button">Search By PIN</a>
-                        <a class="btn searchbuttonstyle" style='margin-right:16px; margin-left:16px' href="https://prod-cdn.preprod.co-vin.in/assets/pdf/Dos_and_Donts_for_Citizens.pdf" target="_blank" role="button">Search By District</a>
+                        <button type="button" class="btn btn-md searchbuttonstyle" data-toggle="modal" data-target="#pinModal">Search By PIN
+                        </button>
+                        <button type="button" class="btn btn-md searchbuttonstyle" data-toggle="modal" data-target="#dModal"> Search By District
+                        </button>
                     </div>
-                    <!-- <button onclick="center()">Search by PIN</button>
-                    <p id="p551" style="display: none;">hello</p> -->
                 </div>
             </div>
             <div class="col-sm-1"></div>
+        </div>
+    </div>
+    <!-- Modals -->
+    <div class="modal fade" id="pinModal" tabindex="-1" role="dialog" aria-labelledby="pinModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="pinModalLabel">SEARCH USING PIN</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12 ">
+                                <div class="modalformwrapper">
+                                    <form>
+                                        <div class="form-group">
+                                            <label for="exampleInputEmail1">Enter PIN</label>
+                                            <input type="number" class="form-control" id="inputmail">
+                                        </div>
+                                        <button class="searchbm" onclick='check()'>Search</button>
+                                        <p class="searchm" id="demo"></p>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="dModal" tabindex="-1" role="dialog" aria-labelledby="dModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="dModalLabel">SEARCH USING DISTRICT</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12 ">
+                                <div class="modalformwrapper">
+                                    <form>
+                                        <div class="form-group">
+                                            <label for="exampleInputEmail1">Enter State</label>
+                                            <input type="text" class="form-control" id="inputmail"><br>
+                                            <label for="exampleInputEmail1">Enter District</label>
+                                            <input type="text" class="form-control" id="inputmail">
+                                        </div>
+                                        <button class="searchbm" onclick='check2()'>Search</button>
+                                        <p class="searchm" id="demo2"></p>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
         </div>
     </div>
     <!-- JS -->
@@ -128,6 +197,15 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
     <script>
         AOS.init();
+    </script>
+    <script type='text/javascript'>
+        function check() {
+            document.getElementById("demo").innerHTML = "No Slot available right now!";
+        }
+
+        function check2() {
+            document.getElementById("demo2").innerHTML = "No Slot available right now!";
+        }
     </script>
 </body>
 

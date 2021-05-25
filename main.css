@@ -213,6 +213,21 @@ div.searchbuttons a:hover {
     border: 3px solid rgb(20, 11, 80);
 }
 
+.modal-title {
+    font-weight: bold;
+    color: rgb(16, 16, 110);
+}
+
+.searchbm {
+    background-color: rgb(38, 19, 107);
+    color: white;
+    border: 2px solid white;
+}
+
+p.searchm {
+    color: red;
+}
+
 
 /* ----------------dsection1---------------------- */
 
@@ -349,6 +364,31 @@ div.states {
 
 div.number {
     text-align: right;
+}
+
+
+/* -------------------dsection3------------------- */
+
+.dsection3 {
+    padding: 40px;
+    margin: auto;
+    text-align: center;
+    background-color: rgb(226, 222, 222);
+}
+
+div.dsection3 label {
+    background-color: green;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    font-size: 20px;
+    line-height: 35px;
+    height: 35px;
+    width: 150px;
+}
+
+#area-chart {
+    min-height: 250px;
 }
 
 
