@@ -5,8 +5,16 @@ html {
     overflow-x: hidden;
 }
 
+body {
+    background-color: rgb(226, 222, 222);
+}
+
 
 /* ---------------NAV BAR---------------- */
+
+nav {
+    background-color: rgb(255, 254, 254);
+}
 
 .navbar-light .navbar-toggler {
     color: rgb(42, 13, 97);
