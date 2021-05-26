@@ -10,6 +10,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="icon" href="./img/add.png" type="image/x-icon">
     <link rel="stylesheet" href="main.css">
+    <script type="text/javascript" src="style.js"></script>
     <title>CoWin</title>
 </head>
 
@@ -62,10 +63,11 @@
     <div class="section2">
         <div class="col-1"></div>
         <div class="col-sm-10 procedure">
-            <h2>HOW IT WORKS?</h2>
+            <h2 class="how">HOW IT WORKS?</h2>
             <div class="row">
                 <div class="col-sm-6 procedureitems" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-quad">
                     <h4>REGISTER YOURSELF</h4>
+                    <hr>
                 </div>
                 <div class="col-sm-6 highlight" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-quad">
                     <div class="box">
@@ -83,11 +85,13 @@
                 </div>
                 <div class="col-sm-6 procedureitems" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-quad">
                     <h4>CHOOSE VACCINE LOCATION</h4>
+                    <hr>
                 </div>
             </div>
             <div class="row" data-aos="fade-up">
                 <div class="col-sm-6 procedureitems" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-quad">
                     <h4>CONFIRM YOUR SLOT</h4>
+                    <hr>
                 </div>
                 <div class="col-sm-6 highlight" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-quad">
                     <div class="box">
@@ -98,7 +102,7 @@
             </div>
             <div class="row" data-aos="fade-up" data-aos-duration="2000" data-aos-easing="ease-in-quad">
                 <div class="col-sm-12 procedurebuttons">
-                    <a class="btn procedurebuttonstyle" href="https://prod-cdn.preprod.co-vin.in/assets/pdf/User_Guide_Citizen%20registration_18+.pdf" target="_blank" role="button">Know how to book your appointment</a>
+                    <a class="btn procedurebuttonstyle" href="https://prod-cdn.preprod.co-vin.in/assets/pdf/User_Guide_Citizen%20registration_18+.pdf" target="_blank" role="button">How To Book Appointment</a>
                     <a class="btn procedurebuttonstyle" style='margin-right:16px; margin-left:16px' href="https://prod-cdn.preprod.co-vin.in/assets/pdf/Dos_and_Donts_for_Citizens.pdf" target="_blank" role="button">Dos and Don'ts</a>
                 </div>
             </div>
@@ -217,15 +221,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
     <script>
         AOS.init();
-    </script>
-    <script type='text/javascript'>
-        function check() {
-            document.getElementById("demo").innerHTML = "No Slot available right now!";
-        }
-
-        function check2() {
-            document.getElementById("demo2").innerHTML = "No Slot available right now!";
-        }
     </script>
 </body>
 

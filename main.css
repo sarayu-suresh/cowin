@@ -14,11 +14,11 @@ body {
 
 nav {
     background-color: rgb(255, 254, 254);
+    border: 1px solid rgb(42, 13, 97);
 }
 
 .navbar-light .navbar-toggler {
     color: rgb(42, 13, 97);
-    border: 1px solid rgb(42, 13, 97);
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -124,9 +124,15 @@ div.registerbuttons a:hover {
     padding: 40px;
 }
 
+h2.how {
+    color: rgb(17, 12, 92);
+}
+
 .procedure {
     margin: auto;
     text-align: center;
+    padding: 40px;
+    border: 3px ridge rgb(38, 9, 112);
 }
 
 div.procedure h2 {
@@ -197,11 +203,12 @@ div.procedurebuttons a:hover {
     margin: auto;
     text-align: center;
     background-color: rgb(20, 11, 80);
+    border-top: 3px solid #000;
 }
 
 div.vaccineCentre h3 {
     font-weight: bold;
-    color: #fff;
+    color: rgb(248, 247, 242);
 }
 
 .searchbuttons {
@@ -210,16 +217,17 @@ div.vaccineCentre h3 {
 }
 
 .searchbuttonstyle {
-    background-color: rgb(20, 11, 80);
-    color: rgb(252, 252, 253);
+    background-color: rgb(248, 152, 9);
+    color: rgb(12, 12, 12);
     font-weight: 500;
-    border: 2px solid rgb(253, 252, 253);
+    border: 2px solid rgb(2, 2, 2);
+    border-radius: 30px;
 }
 
 div.searchbuttons a:hover {
     background-color: rgb(255, 255, 255);
     color: rgb(45, 13, 121);
-    border: 3px solid rgb(20, 11, 80);
+    border: 2px solid rgb(20, 11, 80);
 }
 
 .modal-title {
@@ -415,10 +423,6 @@ div.dsection3 label {
     width: 150px;
 }
 
-#area-chart {
-    min-height: 250px;
-}
-
 
 /* -------------------lsection1------------------ */
 
@@ -427,6 +431,7 @@ div.dsection3 label {
     margin: auto;
     text-align: center;
     background-color: rgb(226, 222, 222);
+    border: 2px solid rgb(26, 7, 95);
 }
 
 .container.login-container {
@@ -545,7 +550,8 @@ a.frgt-pswd {
     padding: 40px;
     margin: auto;
     text-align: center;
-    background-color: rgb(248, 244, 244);
+    background-color: rgb(226, 222, 222);
+    border: 2px solid rgb(26, 7, 95);
 }
 
 .verification {
@@ -582,8 +588,8 @@ a.frgt-pswd {
 footer {
     background-color: rgb(255, 255, 255);
     padding: 20px;
-    border-top: 5px solid rgb(10, 10, 10);
-    border-bottom: 5px solid rgb(10, 10, 10);
+    border-top: 5px solid rgb(22, 7, 65);
+    border-bottom: 5px solid rgb(22, 7, 65);
 }
 
 .right {
@@ -631,6 +637,7 @@ h5.number {
         margin: auto;
         padding: 0px;
         padding-top: 30px;
+        text-align: center;
     }
     .procedurebuttonstyle {
         margin-top: 10px;
