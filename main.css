@@ -2,6 +2,7 @@
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 
@@ -549,9 +550,51 @@ a.frgt-pswd {
 }
 
 
+/* -----------------fooooterrrrr----------------- */
+
+footer {
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    border-top: 5px solid rgb(10, 10, 10);
+    border-bottom: 5px solid rgb(10, 10, 10);
+}
+
+.right {
+    text-align: end;
+}
+
+.left {
+    text-align: start;
+}
+
+.partnersimg {
+    width: 30%;
+    padding: 10px;
+}
+
+.partnersimgb {
+    width: 15%;
+    padding: 10px;
+}
+
+h6.number {
+    color: rgb(10, 10, 10);
+}
+
+h5.number {
+    color: rgb(31, 16, 88);
+    font-weight: 700;
+    margin-left: 15px;
+}
+
+
 /* ---------------CUSTOM RESPONSIVE-------------- */
 
 @media screen and (max-width:680px) {
+    html {
+        scroll-behavior: smooth;
+        overflow-x: hidden;
+    }
     .vaccineImg {
         width: 90%;
         padding: 10px;
@@ -582,5 +625,20 @@ a.frgt-pswd {
     .medal {
         width: 50%;
         margin: auto;
+    }
+    .left {
+        text-align: start;
+    }
+    .right {
+        text-align: start;
+        margin-left: 15px;
+    }
+    .partnersimg {
+        width: 33%;
+        padding: 10px;
+    }
+    .partnersimgb {
+        width: 15%;
+        padding: 10px;
     }
 }
