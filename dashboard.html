@@ -430,28 +430,74 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-3 vcount" data-aos="fade-right" data-aos-duration="1000" data-aos-easing="ease-in-quad">
+            <div class="col-sm-3 vcount" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-quad">
                 <div class="vbox">
                     <div id="piechart1"></div>
                 </div>
             </div>
             <div class="col-sm-3 vcount" data-aos="fade-left" data-aos-duration="1000" data-aos-easing="ease-in-quad">
-                <div class="vbox">
-                    <img class="card-img-top" src="./img/arrow1.svg">
-                    <h6>Register using your Mobile no. or Aadhaar no. or any other Identity docs.</h6>
+                <div class="vboxscroll">
+                    <p>SITES CONDUCTING VACCINATION</p>
+                    <hr>
+                    <div class="row">
+                        <div class="=col-1"></div>
+                        <div class="col-7 states">
+                            <p>Government</p>
+                        </div>
+                        <div class="col-3 number">
+                            <p>41,493</p>
+                        </div>
+                        <div class="=col-1"></div>
+                    </div>
+                    <div class="row">
+                        <div class="=col-1"></div>
+                        <div class="col-7 states">
+                            <p>Private</p>
+                        </div>
+                        <div class="col-3 number">
+                            <p>2,263</p>
+                        </div>
+                        <div class="=col-1"></div>
+                    </div>
                 </div>
             </div>
             <div class="col-sm-1"></div>
         </div>
-    </div>
-    <div class="dsection3">
         <div class="row">
             <div class="col-sm-1"></div>
-            <div class="col-sm-10">
-                <div class="text-center">
-                    <label class="label label-success">Area Chart</label>
-                    <div id="area-chart"></div>
+            <div class="col-sm-2">
+            </div>
+            <div class="col-sm-5 vcount" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-quad">
+                <div class="vboxage">
+                    <p>TOTAL REGISTRATIONS</p>
+                    <hr>
+                    <div class="row">
+                        <div class="=col-1"></div>
+                        <div class="col-7 states">
+                            <p>Age 18-44</p>
+                        </div>
+                        <div class="col-3 number">
+                            <p>8,91,01,400</p>
+                        </div>
+                        <div class="=col-1"></div>
+                    </div>
+                    <div class="row">
+                        <div class="=col-1"></div>
+                        <div class="col-7 states">
+                            <p>Age 45+</p>
+                        </div>
+                        <div class="col-3 number">
+                            <p>14,43,42,554</p>
+                        </div>
+                        <div class="=col-1"></div>
+                    </div>
                 </div>
+                <div class="row">
+                    <br><br><br><br>
+                    <a class="btn verifybuttonstyle" href="https://dashboard.cowin.gov.in/" role="button">Click to show more </a>
+                </div>
+            </div>
+            <div class="col-sm-2">
             </div>
             <div class="col-sm-1"></div>
         </div>
@@ -513,68 +559,6 @@
             var chart = new google.visualization.PieChart(document.getElementById('piechart1'));
             chart.draw(data, options);
         }
-    </script>
-    <script>
-        var data = [{
-                y: '2014',
-                a: 50,
-                b: 90
-            }, {
-                y: '2015',
-                a: 65,
-                b: 75
-            }, {
-                y: '2016',
-                a: 50,
-                b: 50
-            }, {
-                y: '2017',
-                a: 75,
-                b: 60
-            }, {
-                y: '2018',
-                a: 80,
-                b: 65
-            }, {
-                y: '2019',
-                a: 90,
-                b: 70
-            }, {
-                y: '2020',
-                a: 100,
-                b: 75
-            }, {
-                y: '2021',
-                a: 115,
-                b: 75
-            }, {
-                y: '2022',
-                a: 120,
-                b: 85
-            }, {
-                y: '2023',
-                a: 145,
-                b: 85
-            }, {
-                y: '2024',
-                a: 160,
-                b: 95
-            }],
-            config = {
-                data: data,
-                xkey: 'y',
-                ykeys: ['a', 'b'],
-                labels: ['Total Income', 'Total Outcome'],
-                fillOpacity: 0.6,
-                hideHover: 'auto',
-                behaveLikeLine: true,
-                resize: true,
-                pointFillColors: ['#ffffff'],
-                pointStrokeColors: ['black'],
-                lineColors: ['gray', 'red']
-            };
-        config.element = 'area-chart';
-        Morris.Area(config);
     </script>
 </body>
 

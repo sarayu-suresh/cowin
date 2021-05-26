@@ -351,6 +351,25 @@ div.vboxscroll p {
     font-weight: bold;
 }
 
+div.vboxage {
+    background-color: #ffffff;
+    box-shadow: 0 0 0 3px rgba(40, 5, 95, 0.15), 10px 12px 7px 0 rgba(49, 14, 146, 0.14);
+    border-radius: 3px;
+    text-align: center;
+    align-items: flex-start;
+    justify-content: space-between;
+    /* margin: 20px; */
+    padding: 20px 20px 20px 20px;
+    overflow: auto;
+    overflow-x: hidden;
+    height: 170px;
+}
+
+div.vboxage p {
+    font-size: 13px;
+    font-weight: bold;
+}
+
 div.states p {
     color: rgb(42, 20, 105);
 }
